@@ -20,7 +20,7 @@ class SocialFeed extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('FACEBOOK'),
-        backgroundColor: Colors.pink[100], // Cambiar el color del AppBar a rosa
+        backgroundColor: Colors.pink[100], 
       ),
       body: ListView(
         children: [
@@ -45,7 +45,7 @@ class SocialFeed extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.lightBlue[50], // Cambiar el color de fondo del BottomNavigationBar a azul claro
+        backgroundColor: Colors.lightBlue[50], 
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home, color: Colors.red),
@@ -114,7 +114,7 @@ class PostWidget extends StatelessWidget {
                 Column(
                   children: [
                     IconButton(
-                      icon: Icon(Icons.thumb_up, color: Colors.blue), // Botón de me gusta en color azul
+                      icon: Icon(Icons.thumb_up, color: Colors.blue),
                       onPressed: () {},
                     ),
                     Text('Me gusta'),
