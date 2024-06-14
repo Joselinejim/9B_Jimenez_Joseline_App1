@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'social_feed.dart';
+import 'pantallas/PantallaPrincipal.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,10 +9,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: SocialFeed(),
+      debugShowCheckedModeBanner: false, 
+      home: PantallaPrincipal(),
     );
   }
 }
-
-
