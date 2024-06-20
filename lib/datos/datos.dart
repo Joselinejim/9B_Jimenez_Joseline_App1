@@ -3,7 +3,7 @@ const List<Map<String, String>> listaCards = [
   {
     "nombre": "Joseline Jiménez López",
     "descripcion": "Buen día a todos, sean bienvenidos a este sitio en el que encontraran memees y diversión jajaja",
-    "imagen": "https://st.depositphotos.com/1001911/55508/v/450/depositphotos_555089554-stock-illustration-happy-emoji-emoticon-showing-double.jpg"
+    "imagen": "https://media.istockphoto.com/id/479629586/es/vector/emoticono-apuntando-en-s%C3%AD-mismo-me-retiro.jpg?s=612x612&w=0&k=20&c=mSIMe5AZPucK0Z1bbcBQPWuixSstXSZIHYRfM5QhFYU="
   },
   {
     "nombre": "Pauliss Lop",

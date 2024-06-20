@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import '../widgets/botonesCard.dart';
-import 'descripcionCard.dart';
-import '../widgets/imagenCard.dart';
-import 'tituloCard.dart';
 
 class TarjetaFeed extends StatelessWidget {
   final String avatar;
@@ -26,13 +22,59 @@ class TarjetaFeed extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            TituloCard(avatar: avatar, name: name),
+            Row(
+              children: [
+                CircleAvatar(
+                  child: Text(avatar),
+                ),
+                SizedBox(width: 10),
+                Text(
+                  name,
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
             SizedBox(height: 10),
-            DescripcionCard(description: description),
+            Text(description),
             SizedBox(height: 10),
-            ImagenCard(imageUrl: imageUrl),
+            Center(
+              child: Image.network(imageUrl),
+            ),
             SizedBox(height: 10),
-            BotonesCard(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Column(
+                  children: [
+                    IconButton(
+                      icon: Icon(Icons.thumb_up, color: Colors.blue), 
+                      onPressed: () {},
+                    ),
+                    Text('Me gusta'),
+                  ],
+                ),
+                Column(
+                  children: [
+                    IconButton(
+                      icon: Icon(Icons.comment),
+                      onPressed: () {},
+                    ),
+                    Text('Comentar'),
+                  ],
+                ),
+                Column(
+                  children: [
+                    IconButton(
+                      icon: Icon(Icons.share),
+                      onPressed: () {},
+                    ),
+                    Text('Compartir'),
+                  ],
+                ),
+              ],
+            ),
           ],
         ),
       ),
